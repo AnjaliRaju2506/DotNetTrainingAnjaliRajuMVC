@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var item in ViewBag.Location)
+{
+    <div>@item </div>
+}
+<br />
+
+<ul>
+    @foreach (var item in ViewBag.Location)
+    {        
+           <li>@item </li>
+    }
+</ul>
+<br/>
+
+<ol>
+    @foreach (var item in ViewBag.Location)
+    {
+        <li>@item </li>
+    }
+</ol>
+<br/>
+
+<ul type="disc">
+    @foreach (var item in ViewBag.Location)
+    {
+        <li>@item </li>
+    }
+    <br/>
+
+<ol type="a">
+        @foreach (var item in ViewBag.Location)
+        {
+            <li>@item </li>
+        }
+</ol>
+
+
+</ul>
