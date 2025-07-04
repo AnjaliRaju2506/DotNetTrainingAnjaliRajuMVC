@@ -1,0 +1,20 @@
+﻿@model IEnumerable<SelectDetailDelete.Models.Contact>
+
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Location</th>
+    </tr>
+    @foreach (var trainee in Model)
+    {
+        <tr>
+            <td>@trainee.Name</td>
+            <td>@trainee.Location</td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = trainee.Id }) |
+            </td>
+        </tr>
+    }
+
+</table>
